@@ -2,3 +2,5 @@
 Creation of a version of the "game of life" game in python
 
 This project is under construction
+
+ola meu nome é pedro
