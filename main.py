@@ -2,8 +2,8 @@ import pygame
 from sys import exit
 
 # global variables / variaveis globais
-WINDOW_WIDTH = 600
-WINDOW_LENGTH = 600
+WINDOW_WIDTH = 800
+WINDOW_LENGTH = 800
 SCREEN = None
 
 #global colors
@@ -20,6 +20,9 @@ def drawGrid():
     for y in range(0, WINDOW_LENGTH, blockSize):
       rect = pygame.Rect(x, y, blockSize, blockSize)
       pygame.draw.rect(SCREEN, GREY, rect, 1)
+  
+  # create caption for game window
+  pygame.display.set_caption("Game of Life")
 
 
 def main():
