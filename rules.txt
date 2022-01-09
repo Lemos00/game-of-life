@@ -1,0 +1,4 @@
+squares are ALIVE or DEAD:
+	- if cell has no alive neighbors --> it dies
+	- if only 1 alive neighbor --> it dies
+	- if 2 or more alive neighbors --> it stays alive
