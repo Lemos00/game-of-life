@@ -15,7 +15,11 @@ GREY = (150, 150, 150)
 """
 def drawGrid():
   global WINDOW_WIDTH, WINDOW_LENGTH, WHITE
+  
+  #size of squares
   blockSize = 15
+
+  
   for x in range(0, WINDOW_WIDTH, blockSize):
     for y in range(0, WINDOW_LENGTH, blockSize):
       rect = pygame.Rect(x, y, blockSize, blockSize)
@@ -44,11 +48,6 @@ def main():
     
     pygame.display.update()
 
-
-  
-
-
-  pass
 
 if __name__ == "__main__":
   main()
