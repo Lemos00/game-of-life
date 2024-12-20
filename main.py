@@ -6,9 +6,18 @@ WINDOW_WIDTH = 800
 WINDOW_LENGTH = 800
 SCREEN = None
 
-#global colors
+
+# colors for application
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+BLUE = (0, 0, 255)
+WHITE = (255, 255, 255)
+YELLOW = (255, 255, 0)
 BLACK = (0, 0, 0)
-GREY = (150, 150, 150)
+PURPLE = (106, 44, 112)
+ORANGE = (255, 165, 0)
+GREY = (128, 128, 128)
+TURQUOISE = (64, 224, 208)
 
 """
   drawGrid will be responsible for drawing the grid for the game of life
@@ -39,10 +48,12 @@ def main():
   SCREEN.fill(BLACK)
 
   # infinite loop to keep game running
-  while (True):
+  run = True
+  while (run):
     drawGrid()
     for event in pygame.event.get():
       if event.type == pygame.QUIT:
+        run = False
         pygame.quit()
         exit()
     
